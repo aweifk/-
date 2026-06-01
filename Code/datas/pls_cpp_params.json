@@ -1,0 +1,30 @@
+{
+  "model_type": "PLSRegression",
+  "degree": 3,
+  "n_components": 3,
+  "scale": true,
+  "feature_names": [
+    "Z^1",
+    "Z^2",
+    "Z^3",
+    "F",
+    "E_meas"
+  ],
+  "x_mean": [
+    -115.0,
+    18016.666666666668,
+    -3174000.0,
+    6250.0,
+    0.0757552083333333
+  ],
+  "coef": [
+    -5.125628039371432e-05,
+    -4.128544314339023e-08,
+    9.510782743946782e-10,
+    -2.29206171829256e-06,
+    0.9358437381635387
+  ],
+  "intercept": 0.05870833333333333,
+  "predict_formula": "y = intercept + sum((x[i] - x_mean[i]) * coef[i])",
+  "feature_build_note": "x[0]=Z, x[1]=Z^2, ... x[degree-1]=Z^degree, x[degree]=F, x[degree+1]=E_meas"
+}
